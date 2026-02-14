@@ -1,0 +1,170 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  background: #050816;
+  color: #e4e4e7;
+  line-height: 1.6;
+}
+
+/* Layout helpers */
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Hero */
+.hero {
+  padding: 4rem 0 3rem;
+  text-align: center;
+  background: radial-gradient(circle at top, #1f2937 0, #030712 55%);
+}
+
+.hero-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  color: #a1a1aa;
+  margin-bottom: 0.5rem;
+}
+
+.hero-location {
+  font-size: 0.95rem;
+  color: #d4d4d8;
+  margin-bottom: 1rem;
+}
+
+.hero a {
+  color: #22d3ee;
+  text-decoration: none;
+}
+
+.hero a:hover {
+  text-decoration: underline;
+}
+
+.hero-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.hero-links a {
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #22d3ee;
+  font-size: 0.9rem;
+}
+
+/* Sections */
+.section {
+  padding: 2.5rem 0;
+}
+
+.section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #f9fafb;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.skills-grid h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+  color: #e5e7eb;
+}
+
+.skills-grid ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+  color: #d4d4d8;
+}
+
+/* Projects */
+.project-card {
+  border: 1px solid #27272a;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  background: rgba(15, 23, 42, 0.7);
+}
+
+.project-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.project-tags {
+  font-size: 0.85rem;
+  color: #a5b4fc;
+  margin-bottom: 0.5rem;
+}
+
+.project-links {
+  margin-top: 0.6rem;
+}
+
+.project-links a {
+  display: inline-block;
+  margin-right: 0.8rem;
+  font-size: 0.9rem;
+  color: #22d3ee;
+  text-decoration: none;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
+/* Lists in Education/Certifications */
+#education ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+#education li {
+  margin-bottom: 0.3rem;
+}
+
+/* Contact */
+#contact a {
+  color: #22d3ee;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid #27272a;
+  padding: 1rem 0 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #a1a1aa;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+  }
+}
